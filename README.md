@@ -72,11 +72,12 @@ Authorization: Bearer <your_access_token>
 
 ### 🔑 Auth
 
-| Method |  Endpoint                                 | Description                   | Auth Required 
-|--------|  ------------------------                 | ----------------------------- |
-| POST   | `http://localhost:8000/users/register/`   | Register a new user           |
-| POST   | `http://localhost:8000/users/login/`      | Get JWT tokens (login)        |
-| GET    | `http://localhost:8000/users/profile/`    | Need to provide access token  |  ✅ 
+| Method | Endpoint                                | Description                  | Auth Required 
+|--------|-----------------------------------------|------------------------------|--------------
+| POST   | `http://localhost:8000/users/register/` | Register a new user          | ❌            
+| POST   | `http://localhost:8000/users/login/`    | Get JWT tokens (login)       | ❌            
+| GET    | `http://localhost:8000/users/profile/`  | Get current user's profile   | ✅            
+
 
 ---
 
